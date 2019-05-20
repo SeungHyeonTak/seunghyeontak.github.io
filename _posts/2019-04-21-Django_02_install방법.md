@@ -62,6 +62,9 @@ $ pip install Django
 # 프로젝트 만들기
 $ django-admin startproject config .
 
+# 배포를 대비해 의존성 패키지 목록을 만들어 둔다.
+$ pip freeze > requirements.txt
+
 # DB 초기화
 $ python3 manage.py migrate
 
