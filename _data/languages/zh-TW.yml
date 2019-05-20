@@ -11,7 +11,7 @@ comment: comment
 contents: contents
 archive_a: archive_a
 archive_b: archive_b
-archive_date: "%Y year %m month"
+archive_date: "%Y year %m month %d day"
 page: page %d
 recent_posts: recent_posts
 menu: menu
