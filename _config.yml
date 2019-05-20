@@ -28,11 +28,11 @@ defaults:
 paginate: 20
 
 #### Site
-title : Jekyll Jacman
-tagline: A fresh looking and responsive theme for Jekyll
+title : 뜬금이의 개발일지
+tagline: 파이썬 / 장고를 기본으로 한 개발 공부를 위한 블로그 입니다.
 assets: /assets
-url:
-baseurl:
+url: https://seunghyeontak.github.io/
+baseurl: ''
 
 #### Language
 language: zh-CN    ## blog site languages: en, zh-CN, zh-TW, de
@@ -84,9 +84,9 @@ share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
-  name: yitao      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  name: SeungHyeonTak      ## e.g. wuchong Author name
+  intro_line1:  "Hello I'm Seung Hyun, studying back-end development."    ## your introduction on the bottom of the page
+  intro_line2:  "post one's studies on a blog."  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
