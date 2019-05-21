@@ -51,7 +51,7 @@ class Photo(models.Model):
     # 1:N / N:1 로 Many TO owner 으로 구성된다.
     # Django의 os 모델을 쓰려면 밑의 Foreinkey 처럼 써라
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    thumname_image = models.ImageField(blank=True) # blank를 쓰면 이미지 넣어줘도 되고 안넣어 줘도 되고
+    thumnail_image = models.ImageField(blank=True) # blank를 쓰면 이미지 넣어줘도 되고 안넣어 줘도 되고
     comment = models.CharField(max_length=255)
     pub_date = models.DateTimeField(auto_now_add=True)
     # 업로드 하는 순간 저장됨
