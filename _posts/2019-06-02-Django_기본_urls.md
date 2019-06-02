@@ -10,8 +10,7 @@ tags: [Django]
 keywords: "Django"
 ---
 #### Django.기본 웹 개발
-<br>
-<br>
+
 * URL / 정규 표현식 쓰는법
 <br>
 * 정규 표현식
