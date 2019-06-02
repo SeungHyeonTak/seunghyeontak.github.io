@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_30.Form만들기"
+title:  "Django_기본.Form만들기"
 comments: true
-description: "Django_part30"
+description: "Django"
 author: SeungHyeon Tak
-date:   2019-05-13 21:56:00 +0700
+date:   2019-06-02 21:56:00 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django.30 웹 개발
+#### Django.기본 웹 개발
 
 * Form 만들기
  - models.py로 부터 Document를 받아온다.

@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_29.@login_required"
+title:  "Django_기본.@login_required"
 comments: true
-description: "Django_part29"
+description: "Django"
 author: SeungHyeon Tak
-date:   2019-05-13 21:49:00 +0700
+date:   2019-06-02 19:39:00 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django.29 웹 개발
+#### Django.기본 웹 개발
 <br>
 <br>
 #### @login_required

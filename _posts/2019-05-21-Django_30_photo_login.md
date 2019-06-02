@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_35.(SNS 이미지 앱 만들기)Photo form 생성 / login 템플릿 수정"
+title:  "Django_30.(SNS 이미지 앱 만들기)Photo form 생성 / login 템플릿 수정"
 comments: true
-description: "Django_part35"
+description: "Django_part30"
 author: SeungHyeon Tak
 date:   2019-05-21 20:13:54 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django.35 웹 개발
+#### Django.30 웹 개발
 <br>
 * 이미지 업로드 계속해서 진행
 * `forms.py`

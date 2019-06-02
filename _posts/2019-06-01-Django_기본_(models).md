@@ -11,10 +11,34 @@ keywords: "Django"
 ---
 #### Django.기본 웹개발
 <br>
-* 장고 커스텀 모델
+* 기본 지원하는 모델 필드 타입
+  * Primary Key: AutoField, BigAutoField
+  * 문자열: CharField, TextField, SlugField
+  * 날짜/시간: DateTimeField, DurationField
+  * 참/거짓: BooleanField, NullBooleanField
+  * 숫자: IntegerField, SmallIntegerField, PositiveIntegerField, PositiveSmallIntegerfield, BigIntegerField, DecimalField, FloatField
+  * 파일: FileField, ImageField, FilePathField
+  * 이메일: EmailField
+  * URL: URLField
+  * UUID: UUIDField
+  * 아이피: GenericIPAddressField
+  * Relationship Types
+    * ForeignKey
+    * ManyToManyField
+<br>
+* 필드 공통 옵션
+  * blank : 파이썬 validation시에 empty 허용 여부 (디폴트: False)
+  * null (DB 옵션) : null 허용 여부 (디폴트: False)
+  * db_index (DB 옵션) : 인덱스 필드 여부 (디폴트: False)
+  * default : 디폴트 값 지정, 혹은 값을 리턴해줄 함수 지정
+  * 사용자에게 디폴트값을 제공코자 할 때
+  * unique (DB 옵션) : 현재 테이블 내에서 유일성 여부 (디폴트: False)
+  * choices : select 박스 소스로 사용
+  * validators : validators를 수행할 함수를 다수 지정
+<br>
 
 ```
-class형식으로 작성
+class형식으로 작성 방법
 class Post(models.Model):
 models.CharField(max_lenght=100) // 길이 제한있음 100자
 models.TextField(blank=True) // 값이 없어도 저장가능
@@ -24,14 +48,3 @@ models.DateTimeField(auto_now = True) // 매번 저장될때마다 시간 자동
 ...
 등등 많은 내용들이 있다.
 ```
-
-* 모델 등록 하는법
-모델을 다 작성하고 바로 runserver를 돌려도 아직 DB 테이블이 생성이 안되어 우리가 원하는 작업이 안될것이다.
-그러므로
-
-```
-$ python manage.py makemigrations
-$ python manage.py migrate
-```
-
-이 명령어를 통해 앱 폴더 내부에 migration 폴더가 생성되고 DB에 테이블이 생성이 된다.

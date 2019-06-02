@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_34.(SNS 이미지 앱 만들기)Photo 모델 생성 및 Media_url 설정"
+title:  "Django_29.(SNS 이미지 앱 만들기)Photo 모델 생성 및 Media_url 설정"
 comments: true
-description: "Django_part34"
+description: "Django_part29"
 author: SeungHyeon Tak
 date:   2019-05-21 20:13:54 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django.34 웹 개발
+#### Django.29 웹 개발
 <br>
 * 바로 보이는 서비스가 아닌 디버깅으로 사진이 보이게 하기위한 방법을 먼저 해보겠습니다.
 * 먼저 `settings.py`에서 추가해줄 부분

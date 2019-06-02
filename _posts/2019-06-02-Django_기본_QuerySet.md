@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_28.QuerySet"
+title:  "Django_기본.QuerySet"
 comments: true
 description: "Django_part28"
 author: SeungHyeon Tak
-date:   2019-05-13 21:46:00 +0700
+date:   2019-06-02 19:16:00 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django.28 웹 개발
+#### Django.기본 웹 개발
 <br>
 <br>
 
