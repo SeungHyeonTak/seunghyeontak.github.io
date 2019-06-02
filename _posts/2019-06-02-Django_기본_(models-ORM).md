@@ -10,7 +10,7 @@ tags: [Django]
 keywords: "Django"
 ---
 #### Django.기본 웹개발
-<br>
+
 * 장고 모델 - ORM
 <br>
 * application의 데이터 저장 방법

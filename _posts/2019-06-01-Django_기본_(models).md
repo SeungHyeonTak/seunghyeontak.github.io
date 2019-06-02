@@ -10,7 +10,7 @@ tags: [Django]
 keywords: "Django"
 ---
 #### Django.기본 웹개발
-<br>
+
 * 기본 지원하는 모델 필드 타입
   * Primary Key: AutoField, BigAutoField
   * 문자열: CharField, TextField, SlugField

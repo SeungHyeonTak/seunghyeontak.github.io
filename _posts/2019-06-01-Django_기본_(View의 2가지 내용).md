@@ -10,7 +10,7 @@ tags: [Django]
 keywords: "Django"
 ---
 #### Django.기본 웹개발
-<br>
+
 * View 
   * 1개의 HTTP 요청에 대해 -> 1개의 뷰가 호출
   * 크게 2가지 형태의 뷰
