@@ -61,8 +61,8 @@ TEMPLATES = [
 
 #### Django Templates Tag/filter
 * 유틸리티 성격의 장고 템플릿 내에서 호출할 수 있는 함수 목록들
-  * Django Template Tag : {% 태그명 "인자1" "인자2" %}와 같은 방식으로 호출
-  * Django Template Filter : {{값|필터1:인자|필터2:인자|필터3}}와 같은 방식으로 호출
+  * Django Template Tag : "{""%" 태그명 "인자1" "인자2"와 같은 방식으로 호출
+  * Django Template Filter : "{""{"값|필터1:인자|필터2:인자|필터3와 같은 방식으로 호출
 <br>
 #### 디폴트 에러 템플릿 경로
 * django/views/defaults.py 내에서 다음경로 지정
