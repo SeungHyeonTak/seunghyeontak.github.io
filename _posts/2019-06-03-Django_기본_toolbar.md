@@ -16,7 +16,7 @@ keywords: "Django"
 
 ```
 # toolbar 설치
-$ pip install django-toolbar
+$ pip install django-debug-toolbar
 ```
 <br>
 
@@ -48,3 +48,7 @@ if settings.DEBUG:
 
     ] + urlpatterns
 ```
+
+※ 주의 사항
+  * 웹페이지의 템플릿에 필히 "body" 태그가 있어야만, dbt가 동작 가능
+  * 이유 : dbt의 html/script 디폴트 주입 타겟이 body 태그
