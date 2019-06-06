@@ -115,9 +115,9 @@ load staticfiles를 !DOCTYPE 아래에 넣어준다.
 예를 들어
 
 ```html
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
 이렇게 되어있는 코드를
-<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"
 ```
 css / img/ js / font .. 등등 압축푼 폴더에 있는 모든것들을 바꿔줘야한다
 
