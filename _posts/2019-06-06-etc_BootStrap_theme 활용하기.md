@@ -102,10 +102,8 @@ TEMPLATES = [
 ```
 
 <br>
-<br>
 
-* 테마 적용
-
+적용
 * 파일 복사
   * Django 폴더에서 layout, static 폴더 생성
   * index 파일을 layout에 나머지를 static로 넣는다
