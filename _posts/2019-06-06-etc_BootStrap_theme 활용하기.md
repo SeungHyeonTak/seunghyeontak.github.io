@@ -104,15 +104,9 @@ TEMPLATES = [
 #### 4. 테마 적용
 
 * 파일 복사
-
-Django 폴더로 이동해서 layout폴더와 static폴더를 만들어준다.
-아까 압축을푼 파일중에 index.html을 layout으로 넣고
-나머지 파일들을 `static` 폴더로 이동시킨다
-static 파일을 지정해주지 않아서 제대로 뜨지않은것이다.
-그러기 위해선 `index.html`을 수정해줘야한다.
-`load staticfiles`를 DOCTYPE 아래에 넣어준다.
-그리고 다음 작업이 중요한데
-예를 들어
+  * Django 폴더에서 layout, static 폴더 생성
+  * index 파일을 layout에 나머지를 static로 넣는다
+  * index 파일로가서 doctype 밑에 `load staticfiles` 삽입해준다.
 
 
 ```html
