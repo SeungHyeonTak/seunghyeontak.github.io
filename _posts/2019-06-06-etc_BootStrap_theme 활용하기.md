@@ -107,8 +107,7 @@ TEMPLATES = [
 ```
 Django 폴더로 이동해서 layout폴더와 static폴더를 만들어준다.
 아까 압축을푼 파일중에 index.html을 layout으로 넣고
-나머지 파일들을 static 폴더로 이동시킨다.
-그리고 실행시키면 뭔가 제대로 뜨지않을텐데 
+나머지 파일들을 static 폴더로 이동시킨다. 
 static 파일을 지정해주지 않아서 제대로 뜨지않은것이다.
 그러기 위해선 `index.html`을 수정해줘야한다.
 load staticfiles를 DOCTYPE 아래에 넣어준다.
