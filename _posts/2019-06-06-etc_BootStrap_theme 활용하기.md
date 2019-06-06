@@ -103,7 +103,7 @@ TEMPLATES = [
 
 <br>
 <br>
-#### 4. 테마 적용
+#### 4.테마 적용
 
 * 파일 복사
   * Django 폴더에서 layout, static 폴더 생성
@@ -116,11 +116,13 @@ link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
 이렇게 되어있는 코드를
 link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"
 ```
+
 css / img/ js / font .. 등등 압축푼 폴더에 있는 모든것들을 바꿔줘야한다
 
 이런식으로 변경시켜주면 원하는 테마를 볼 수 있다.
 
 마지막으로 
+
 ```python
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -128,3 +130,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 이후 터미널에서 python manage.py collectstatic
 # 을 실행해주고 yes를 입력하면 파일이 정리되어 static폴더로 이동하게 된다.
 ```
+
