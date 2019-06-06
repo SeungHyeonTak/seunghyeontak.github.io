@@ -67,8 +67,10 @@ urlpatterns = [
 ```html
 # blog/templates/blog/main.html
 
-{% extends 'index.html' %}
 ```
+
+![123](https://user-images.githubusercontent.com/46446165/59048545-ff4f5b80-88c0-11e9-8fbd-b30650675fbe.png)
+
 <br>
 
 ```python
