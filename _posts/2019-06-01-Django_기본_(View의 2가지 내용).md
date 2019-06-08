@@ -57,44 +57,74 @@ class IndexView(ListView):
     model = Question
 ```
 
-* def형 view (함수형 뷰)
-  - HTTP 요청 처리
-    - Models : 데이터베이스와의 인터페이스
-    - Templates : 복잡한 문자열 조합을 보다 용이하게 주로 HTML문자열 조합 목적으로 사용하지만, 푸쉬 메세지나 이메일 내용을 만들 때에도 쓰면 편리
-    - Admin 기초 : 심플한 데이터베이스 레코드 관리 UI
-    - Logging : 다양한 경로로 메세지 로깅
-    - Static files : 개발 목적으로 정정인 파일 관리
-    - Messages framework : 유저에게 1회성 메세지 노출 목적
+#### 함수형 뷰(FBV) 및 URL 패턴 사용법
 
-  - HttpResponse를 이용한 함수형 뷰
-    - template을 읽어 HttpResponse로 응답하는 과정 (번거롭고 복잡함 / 가장 기초 적인 부분) - 클래스뷰의 필요성과 원리를 이해할 때 도움됨
+* HttpResponse
 
 ```python
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('polls/index.html')
-    
-    context = {
-        'latest_question_list': latest_question_list,
-    }
-    
-    return HttpResponse(template.render(context, request))
+# blog/urls.py
+
+from . import view
+
+urlpatterns =[
+	path('detial/<int:pk>/', views.postdetail, name='postdetail'),
+]
+# 뒷부분의 name은 views.py에 함수 name과 같게 하는것이 관용적이다.
+
+# blog/views.py
+
+from django.http import HttpResponse
+
+def postdetail(request):
+	return HttpResponse("""<h2>HttpResponse</h2><p>FBV 내용</p>""")
 ```
 
- - render를 이용한 함수형 뷰
-   - shortcuts.render를 사용하여 보다 간결하게 표현한 모습이다. 위 코드의 template = ... 로 시작하는 부분이 사라짐 그리고 제일 하단에 HttpResponse로 리턴하던 것이 render함수로 대체함
+* render
+ * render()함수는 django.shortcuts 패키지에 포함되어있는 함수이다.
+ * 동적으로 template을 이용하여 html을 생성 후 httpresponse에 포함해 반환가능
+ * reqeust와 템플릿 파일명이 필수
 
 ```python
-from django.shortcuts import render
+# postdetail.html에서 내용 작성 후
 
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+# blog/urls.py
 
-    context = {
-        'lastest_question_list': latest_question_list,
-    }
+urlpatterns = [
+	path('detail/<int:pk>/', views.postdetail, name='postdetail'),
+]
 
-    return render(request, 'polls/index.html', context)
+# blog/views.py
+
+def postlist(request):
+	post_list = Post.objects.all() # queryset
+	return render(request, "blog/postlist.html", {'post_list':post_list})
+
+def postdetail(request,pk):
+	post_detail = get_object_or_404(Post,pk=pk)
+	return render(request, "blog/postdetail.html", {'post_detail':post_detail})
+```
+
+* get_object_or_404
+ * 왜 쓰는가? - try-except 블록으로 예외처리를 할 필요가 없다.
+ * View에서만 사용
+ * get_object_or_404(모델_클래스, 검색 조건)
+   * 몇번 데이터 : pk (ex) pk=detail_id or pk=pk)
+
+* redirect
+ * redirect() 함수는 django.shortcuts 패키지에 포함되어 있는 도우미 함수이다.
+ * 다른 url로 변경해주는 역할을 함
+
+```python
+# blog/urls.py
+
+urlpatterns = [
+	path('detail/<int:pk>/',views.postdetail),
+]
+
+# blog/views.py
+
+def postdetail(request):
+	return redirect('/blog/create/')
 ```
 
 
