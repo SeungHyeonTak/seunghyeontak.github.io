@@ -26,6 +26,7 @@ ModelCls.objects.all().order_by('-id')[:10]
 
 # 생성되는 SQL 윤곽 -> INSERT INTO app_model (title) VALUES ("New Title");
 ModelCls.objects.create(title="New Title")
+* 필수로 입력해야하는 값들은 다 입력해야함
 
 # Django에서 이렇게 써준다.
 ```

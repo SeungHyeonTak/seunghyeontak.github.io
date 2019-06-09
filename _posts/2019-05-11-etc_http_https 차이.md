@@ -18,5 +18,27 @@ keywords: "Http, Https"
    * https는 http의 보안상의 문제를 해결해주는 프로토콜이다.
    * http 메시지(text)를 암호화 하는것
    * https의 암호화 원리를 간단히 알아보면 핵심은 공개키 암호화 방식이다.
+<br>
+* HTTP Status Code
+  * 200 - 정상 요청
+  * 302 - 임시 URL로 이동
+  * 404 - 서버가 요청한 페이지를 찾을 수 없음
+  * 500 - 서버 오류 발생
 
+* 200
+  - HttpResponse()
+  - render()
+  - JsonResponse()
 
+* 302 - redirect (특정 페이지로 이동)
+  - HttpResponseRedirect()
+  - resolve_url()
+  - redirect()
+
+* status code 404
+  - raise Http404 : 404 응답 처리
+  - get_object_or_404
+    * views.py에서 이 표현을 써서 404에러 처리
+  - HttpResponseNotFound : 잘 안씀
+
+* 500 - 갑작스러운 오류 - 서버오류 아님
