@@ -86,6 +86,37 @@ def archives_year(request, year):
 
 articles/2019 이렇게 링크를 넣으면 이것만의 새로운 url이 보여진다.
 
+#### get_absolute_url
+* 간편하게 url을 불러올 수 있다. 꼭 구현하기
+* 특정 모델에 대한 Detail뷰를 작성할 경우, Detail에 대한 URLConf설정을 하자마자
+  * 꼭 get_absolute_url을 설정 해주자(매우 간결해짐)
+
+* detail뷰를 만들게 되면 get_absolute_url() 멤버 함수를 무조건 선언
+
+```python
+# models.py에서 작성
+
+class Post(models.Model):
+    ...
+    def get_absolute_url(self):
+	return reverse('blog:post_detail', args=[self.id])
+```
+
+* resolve_url / redirect를 통한 활용
+
+```python
+resolve_url('blog:post_detail', post.id)
+resolve_url(post) # get_absolute_url 있는지 체크해서 리턴
+```
+
+* url templates tag로 활용
+
+```java
+<li>
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> 
+</li>
+```
+
 마지막으로 새로운 장고 앱을 생성후 진행 작업 알아보기
 1. 앱 생성
 
