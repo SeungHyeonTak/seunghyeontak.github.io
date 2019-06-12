@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django_기본.URL"
+title:  "Django_기본.URL_reverse"
 comments: true
 description: "Django"
 author: SeungHyeon Tak
@@ -111,7 +111,7 @@ resolve_url(post) # get_absolute_url 있는지 체크해서 리턴
 
 * url templates tag로 활용
 
-```java
+```html
 <li>
     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> 
 </li>
