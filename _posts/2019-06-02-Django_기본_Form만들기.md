@@ -122,6 +122,7 @@ def dojo_list(request):
 ```
 
 5. templates 에 dojo_form.html을 생성하여 내용 추가
+<br>
 ![12311](https://user-images.githubusercontent.com/46446165/59342584-08b74880-8d45-11e9-9e18-1b6ea6c88cd1.png)
 
 6. admin.py에서 register를 생성하여 값이 잘 저장되는지 확인
