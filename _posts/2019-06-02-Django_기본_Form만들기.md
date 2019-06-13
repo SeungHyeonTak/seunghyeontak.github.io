@@ -36,6 +36,7 @@ form을 이용해 submit하는 형태가 POST방식이다.
 그러므로 GET은 가져오는것이고 POST는 수행하는것임을 알 수 있게 됩니다.
 *****
 
+
 * GET방식으로 요청될 때
   * 입력폼을 보여준다.
 * POST방식으로 요청될 때
@@ -129,6 +130,111 @@ def dojo_list(request):
 6. admin.py에서 register를 생성하여 값이 잘 저장되는지 확인
 7. runserver로 사이트 열어서 확인 값 입력 후 submit으로 넘기면 admin 사이트에 저장되나 확인
 
+#### ModelForm 써보기
+* Model Form <- Form을 상속 받음
+* 지정된 Model로부터 필드 정보를 읽어들여 form field 작성
+
+```python
+# ModelForm
+class DojoForm(forms.ModelForm):
+    class Meta:
+        model = Dojo  # 뒤에 ()를 붙이면 에러나니깐 조심(이거때문에 삽질..)
+        # fields = '__all__' # 전체 필드 지정 혹은 list로 읽어올 필드명 지정
+        fields = ['title', 'content']  # 직접 모델을 선정할 수도 있음
+```
+
+* 내부적으로 model instance를 유지한다.
+* 유효성 검증에 통과한 값들로, 지정 model instance로의 저장(save)을 지원(Create or Update)
+
+```python
+# 이전에 validators를 forms.py에다가 정의했다면
+# 이제는 models에다가 정의 한다.
+
+from django.db import models
+from django import forms
+
+# validators는 원래 model에다가 정의
+def min_length_3_validator(value):
+    if len(value) < 3:
+        raise forms.ValidationError('3글자 이상 입력해주세요.')
+# models에 넣으니 admin에서도 동작한다.
+...
+```
+
+#### Form vs ModelForm
+
+```python
+from django import form
+from .models import Post
+
+# Form은 직접 필드정의를 다하고 위젯도 정한다.
+class PostForm(forms.Form):
+    title = forms.CharField()
+    content = forms.CharField(widget=forms.Textarea)
+
+# Meta 클래스를 이용해 어떤 클래스로부터 어떤 필드를 쓰겠다고 정의 하면 됨
+class PostModelForm(forms.ModelForm):
+    class Meta:
+	model = Post
+	field = ['title','content']
+```
+
+```python
+# views.py
+
+def post_new(request, post=None):
+    # django 스타일
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES, instance=post)
+        # 뒤에 파라미터(유저가 입력한 데이터들) 저순서대로 써야함(순서변하면 X)
+        if form.is_valid(): # 유효성 검사
+            post = form.save() # ModelForm에서 제공
+            return redirect(post)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_form.html',{
+        'form':form
+    })
+
+
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return post_new(request, post)
+```
+
+#### ModelForm.save(commit=True)
+* 컨셉 구현
+
+```python
+from django import forms
+from .models import Post
+
+class PostForm(forms.Form):
+    title = forms.CharField()
+    content = forms.CharField(widget=forms, Textarea)
+
+    def save(self, commit = True):
+        post = Post(**self.cleaned_data)
+	if commit:
+	    post.save()
+	return post
+```
+
+
+
+* 구현 순서
+
+1. Form
+  * 생성할 Model에 맞춰 Form클래스를 정의
+  * ModelForm을 이용하면, Model 내역에 맞게 쉽게 정의 가능
+2. View
+  * Form 클래스를 활용하는, 범용 스타일로 구현
+     (하나의 View에서 하나의 Form, 하나의 Model을 다룬다.)
+3. Template
+  * 거의 모든 View를 커버할 수 있는 범용 템플릿 코드로 구현
+
+
+함수뷰와 다르게 클래스뷰를 이용하면 더 쉽게 구현이 가능하다
 
 #### Form Fields
 * Model Field와 비슷하다
