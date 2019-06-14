@@ -31,16 +31,8 @@ $ sudo apt-get install python3-pip python3-dev
 # pip 설치가 완료 되었는지 확인
 $ pip3 -v
 
-# pip3을 사용하여 virtualenv를 설치
-$ pip3 install virtualenv virtualenvwrapper
-※pip3 명령이 먹지 않는다면 아래 명령어로 대체할 수 있다.
-(sudo pip3 install로 실행 해주자)
--시스템 root 권한으로 pip를 설치한 겨웅 sudo권한이 필요할 수 있어서-
-
-# 가상환경 만들기
-$ virtualenv --python=파이썬버전 가상환경이름
-ex) $ ...=python3.6 venv
-(가상환경 이름은 어떠한 이름을 사용가능하니 (참고))
+# 파이참 터미널에서 진행(python3 버전인 가상환경 생성)
+$ python3 -m virtualenv venv
 
 # 가상환경 활성화
 $ source 가상환경이름/bin/activate
@@ -62,7 +54,10 @@ $ pip install Django
 # 프로젝트 만들기
 $ django-admin startproject config .
 
-# 배포를 대비해 의존성 패키지 목록을 만들어 둔다.
+# 의존성 패키지 목록을 이용해 모듈을 설치한다.(파일이 있을때)
+$ pip install -r requirements.txt
+
+# 배포를 대비해 의존성 패키지 목록을 만들어 둔다.(파일이 없을때)
 $ pip freeze > requirements.txt
 
 # DB 초기화
