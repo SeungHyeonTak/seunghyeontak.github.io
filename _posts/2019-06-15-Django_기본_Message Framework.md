@@ -39,6 +39,7 @@ if form.is_valid():
 # base.html(제일 상위 html부분)
 <!-- message Framwork -->
 
+<!--
 {% if messages %}
     <div class="container">
         {% for message in messages %}
@@ -49,4 +50,5 @@ if form.is_valid():
         {% endfor %}
     </div>
 {% endif %}
+-->
 ```
