@@ -35,20 +35,6 @@ if form.is_valid():
 ```
 
 <br>
-```html
-# base.html(제일 상위 html부분)
-<!-- message Framwork -->
-
-<!--
-{% if messages %}
-    <div class="container">
-        {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}">
-                [{{ message.tags }}]    {# 메세지 Level #}
-                [{{ message.message }}] {# 실제 메세지 내용 #}
-            </div>
-        {% endfor %}
-    </div>
-{% endif %}
--->
-```
+* html파일 제일 상위단에 적용
+<br>
+![asdasd1231](https://user-images.githubusercontent.com/46446165/59553327-75914380-8fce-11e9-8b11-eb631f75b9ff.png)
