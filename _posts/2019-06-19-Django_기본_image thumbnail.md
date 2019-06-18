@@ -4,7 +4,7 @@ title:  "Django_기본.Image Thumbnail"
 comments: true
 description: "Django"
 author: SeungHyeon Tak
-date:   2019-06-18 23:46:21 +0700
+date:   2019-06-19 23:46:21 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django, Image 썸네일, Image Thumbnail"
