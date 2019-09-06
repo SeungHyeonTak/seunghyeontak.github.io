@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "etc. Heroku 배포하기"
+title:  "(etc). Heroku 배포하기"
 comments: true
-description: "Django", "Heroku"
+description: "Django, Heroku"
 author: SeungHyeon Tak
 date:   2019-09-07 02:03:20 +0700
-categories: [Django, Heroku]
-tags: [Django, Heroku]
-keywords: "Django", "Heroku"
+categories: [etc]
+tags: [etc]
+keywords: "Django, Heroku"
 ---
 #### etc. Heroku 배포하기
 
