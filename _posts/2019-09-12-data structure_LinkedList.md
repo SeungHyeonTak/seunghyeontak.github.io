@@ -137,7 +137,7 @@ keywords: "data structure, Linked List"
 ```
 
 
-(github)[https://github.com/SeungHyeonTak/data_structures/blob/master/Linked%20Lists.py]
+[github](https://github.com/SeungHyeonTak/data_structures/blob/master/Linked%20Lists.py)
 
 Linked List code는 위 링크에 걸려 있으니 가서 참고 가능하다.
 
