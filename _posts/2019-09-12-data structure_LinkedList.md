@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "data structure. Linked List"
+title:  "자료구조. Linked List"
 comments: true
-description: "data structure, Linked List"
+description: "자료구조, Linked List"
 author: SeungHyeon Tak
 date:   2019-09-12 01:12:20 +0700
 categories: [자료구조]
 tags: [자료구조]
-keywords: "data structure, Linked List"
+keywords: "자료구조, Linked List"
 ---
-#### data structure. Linked List
+#### 자료구조. Linked List
+
+*****
 
 #### 단방향 연결 리스트
 > 연결리스트란? 각원소를 줄줄이 엮어서 관리하는 방식으로 볼 수 있다. (앞에 있는 것이 뒤에 것을 가르킫록 데이터를 늘여 놓은것!)

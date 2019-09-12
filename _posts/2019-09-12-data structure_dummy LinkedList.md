@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "data structure. Dummy Linked List"
+title:  "자료구조. Dummy Linked List"
 comments: true
-description: "data structure, Linked List, dummy linked List"
+description: "자료구조, Linked List, dummy linked List"
 author: SeungHyeon Tak
 date:   2019-09-12 01:12:20 +0700
 categories: [자료구조]
 tags: [자료구조]
-keywords: "data structure, Linked List, dummy linked List"
+keywords: "자료구조"
 ---
-#### data structure. Dummy Linked List
+#### 자료구조. Dummy Linked List
 
 > dummy node 란?
 > 맨 앞에 head가 가르키고 있는 부분이다. 기능은 하지않고 자리만 잡혀 있는 부분이다.
