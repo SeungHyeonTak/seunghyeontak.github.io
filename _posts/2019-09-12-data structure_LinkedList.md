@@ -13,7 +13,7 @@ keywords: "data structure, Linked List"
 
 #### 단방향 연결 리스트
 > 연결리스트란? 각원소를 줄줄이 엮어서 관리하는 방식으로 볼 수 있다. (앞에 있는 것이 뒤에 것을 가르킫록 데이터를 늘여 놓은것!)
-> 배열과의 차이점은 빠른 시간내에 처리할 수 있다는 점이다. 
+> 배열과의 차이점은 빠른 시간내에 처리할 수 있다는 점이다.
 
 ![node1](https://user-images.githubusercontent.com/46446165/64715986-73bb1b80-d4fc-11e9-83a7-7246acd484f2.png)
 
@@ -40,7 +40,7 @@ keywords: "data structure, Linked List"
 
 
 #### 특정 원소 찾기
-> list에서 특정원소를 찾아 보려 한다. 그러기 위해선 get이라는 함수를 쓸 수 있다.
+> list에서 특정원소를 찾아 보려 한다. 그러기 위해선 get이라는 메서드를 쓸 수 있다.
 >
 > 쉽게 보기 위해 그림을 하나 준비하였다.
 
@@ -50,7 +50,7 @@ keywords: "data structure, Linked List"
 >
 > 우리는 index로 통해 List의 data를 찾아야 한다.
 >
-> 처음 비교 할 대상은 index가 get함수에 일치 하느냐를 따지는 부분이다.
+> 처음 비교 할 대상은 index가 get메서드에 일치 하느냐를 따지는 부분이다.
 >
 > 일단 index는 1부터 시작해야 한다. 그리고 Node의 갯수 보다 크면 안된다는걸 알 수 있다.
 >
@@ -74,7 +74,7 @@ keywords: "data structure, Linked List"
 
 #### List 순회
 
-> 우리가 list를 추가하면서 잘 추가 되었는지 삭제 하면 잘 삭제가 되었는지 display할 함수가 필요하다.
+> 우리가 list를 추가하면서 잘 추가 되었는지 삭제 하면 잘 삭제가 되었는지 display할 메서드가 필요하다.
 >
 > 그러므로 새로운 list를 선언하고 data를 list에 추가 하고 보여주는 형식으로 return 하면 마무리가 된다.
 >
@@ -98,7 +98,7 @@ keywords: "data structure, Linked List"
 >
 > 하지만 이제 부터 천천히 보면 알 수 있다.
 >
-> 처음으로 우리가 만들어준 get함수를 쓸 수 있는데 get(index-1)을 하면 선택하고자 하는 바로 뒤 Node를 선택할 수 있다. 이렇게 선택하게 되면 우리는 get(index-1)의 next 가 어디로 가는지 알 수 있다. 그러면 newnode.next를 get(index-1)의 next로 보내고 get(index-1)의 next는 newnode로 연결 시켜 주면 밑의 그림 처럼 되는걸 알 수 있다.
+> 처음으로 우리가 만들어준 get메서드를 쓸 수 있는데 get(index-1)을 하면 선택하고자 하는 바로 뒤 Node를 선택할 수 있다. 이렇게 선택하게 되면 우리는 get(index-1)의 next 가 어디로 가는지 알 수 있다. 그러면 newnode.next를 get(index-1)의 next로 보내고 get(index-1)의 next는 newnode로 연결 시켜 주면 밑의 그림 처럼 되는걸 알 수 있다.
 >
 > 아! 이때 count를 +1을 해줘서 늘려 나아가면 된다.
 
@@ -123,7 +123,7 @@ keywords: "data structure, Linked List"
 
 ![node5](https://user-images.githubusercontent.com/46446165/64719811-04492a00-d504-11e9-9e17-5f07f7845ce4.png)
 
-> 위의 그림 처럼 바뀌게 될 것이다. 그럼 우리는 count를 -1하고 진행 하고 display 함수를 실행하면 정상 적으로 나올것이다.
+> 위의 그림 처럼 바뀌게 될 것이다. 그럼 우리는 count를 -1하고 진행 하고 display 메서드를 실행하면 정상 적으로 나올것이다.
 >
 > 이번건도 응용해야할 부분이 있다. 위와 마찬가지로 풀어보길 바란다.
 >
