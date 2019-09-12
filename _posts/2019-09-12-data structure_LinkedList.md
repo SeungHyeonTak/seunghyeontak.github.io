@@ -5,8 +5,8 @@ comments: true
 description: "data structure, Linked List"
 author: SeungHyeon Tak
 date:   2019-09-12 01:12:20 +0700
-categories: [data structure]
-tags: [data structure]
+categories: [자료구조]
+tags: [자료구조]
 keywords: "data structure, Linked List"
 ---
 #### data structure. Linked List
