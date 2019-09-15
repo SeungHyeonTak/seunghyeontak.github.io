@@ -4,7 +4,7 @@ title:  "자료구조. Stack"
 comments: true
 description: "Stack"
 author: SeungHyeon Tak
-date:   2019-09-12 01:12:20 +0700
+date:   2019-09-15 19:04:20 +0700
 categories: [자료구조]
 tags: [자료구조]
 keywords: "자료구조"
