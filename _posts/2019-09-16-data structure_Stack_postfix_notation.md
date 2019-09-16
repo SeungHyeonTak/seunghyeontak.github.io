@@ -14,8 +14,9 @@ keywords: "자료구조"
 
 
 > 중위 표기법 -> 후위 표기법
+<br>
 ![stack11](https://user-images.githubusercontent.com/46446165/64956409-797e7b80-d8c5-11e9-87f8-68806e9c0c24.png)
-
+<br>
 > 이런식으로 연산자를 뒤로 빼주는것이 후위 표기법이다.
 > 피연산자는 그대로 두고 연산자만 이동하는데
 > 연산자끼리도 비교하며 Stack을 쌓아야한다.
@@ -40,9 +41,9 @@ prec = {
 ```
 다음과 같이 설정 하고 prec에서 비교하며 쓰면 된다. <br>
 
-* stack안에 높은data가 있으면 낮은data를 못넣는다.
+* stack안에 높은data가 있으면 낮은data를 못넣는다.<br>
 ![stack22](https://user-images.githubusercontent.com/46446165/64957140-36250c80-d8c7-11e9-9c3f-57d5d765bafa.png)
-
+<br>
 * 중위 표현식을 왼쪽부터 한글자씩 읽기
   * 피연산자이면 그냥 출력
   * '('이면 stack에 push
