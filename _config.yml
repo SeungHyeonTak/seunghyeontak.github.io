@@ -3,28 +3,17 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "뜬금이의 개발일지"
 
 author:
-  facebook:         your-id
-  youtubeUser:      your-id
-  youtubeChannel:   your-id
-  twitter:          your-id
-  github:           your-id
-  stackoverflow:    your-id
-  quora:            your-id
-  linkedin:         your-id
-  pinterest:        your-id
-  googlePlus:       your-id
-  instagram:        your-id
-  reddit:           your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
+  youtubeChannel:   https://www.youtube.com/channel/UCzQ62LrWobKCEENqkoNAYAQ?view_as=subscriber
+  github:           https://github.com/SeungHyeonTak
+  linkedin:         https://www.linkedin.com/in/%EC%8A%B9%ED%98%84-%ED%83%81-171bab192/
+  email:            conficker77@gmail.com
 
 copyright:
-  year:             2017
-  name:             Kiko
+  year:             2019
+  name:             SeungHyeonTak
 
 # Google-analytics
 google-analytics:
@@ -32,10 +21,10 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kiko-plus"
+  id:               "SeungHyeon-plus"
 
 # URL
-url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
+url:                "https://seunghyeontak.github.io/" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
 baseurl:            "https://seunghyeontak.github.io/" # the subpath of your site, e.g. /blog
 
