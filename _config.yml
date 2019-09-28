@@ -44,11 +44,11 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
+  - name:           "About /"
     url:            "/about"
-  - name:           "Archive"
+  - name:           "Archive /"
     url:            "/archive"
-  - name:           "Tags"
+  - name:           "Tags /"
     url:            "/tags"
   - name:           "Github"
     url:            "https://github.com/SeungHyeonTak"
