@@ -21,7 +21,7 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "SeungHyeon-plus"
+  id:               "seunghyeon-blog"
 
 # URL
 url:                "https://seunghyeontak.github.io/" # the base hostname & protocol for your site
