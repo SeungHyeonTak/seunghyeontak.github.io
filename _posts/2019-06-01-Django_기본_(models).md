@@ -11,6 +11,64 @@ keywords: "Django"
 ---
 #### Django.기본 웹개발
 
+
+#### Django Project (MTV)
+* Model - 데이터베이스에 저장되는 데이터
+* template - 사용자(user)에게 보여지는 부분
+* view - 실질적으로 프로그램로직이 동작하여 템플릿에 전달
+
+
+#### Django Project 모델링 설계방법
+* 어떤 필드가 필요한지 생각해보기
+* 생각이 되면 적어보기
+* 각 필드는 어떤 타입이 되어야하는지 생각 혹은 논의 한다.
+
+```text
+주문(Order) 모델링
+ - 주문번호 - pk
+ - 고객-고객번호 - relation -pk
+ - 총 금액 - int
+ - 주문 상태 - choice
+
+포스트(Post) 모델링
+ - 글 번호 - pk
+ - 유저-글쓴이 번호 - relation -pk
+ - 글 내용 - TextField
+ - 글 쓴 날짜 - DateTimeField
+ - 글 수정한 날짜 - DateTimeField
+```
+
+> Primary Key(기본키, pk)
+>> 테이블에 저장된 각각의 데이터를 유일하게 구분하는 키
+>> 바꾸어 말하면, 데이터베이스 테이블에 각 행의 식별 기준인 기본키가 필요하다.
+>> Django에는 기본키로 id가 디폴트로 지정되어 있다.
+>> id = models.AutoField(primary_key=True)
+
+> Foreignkey (외래키, fk)
+>> 각 테이블 간에 연결하기 위해서 특정 테이블에서 다른 테이블의 참조되는 기본키를 외래키라고 한다.
+
+```text
+Users
+-id
+-user_name
+-phone_number
+
+Orders
+-id
+-product_name
+-user_name
+-total_price
+-status
+
+Products
+-id
+-product_name
+-Product_price
+```
+
+> 여기서 외래키를 찾으라하면
+> Orders의 product_name과 user_name을 고를 수 있다.
+
 * 기본 지원하는 모델 필드 타입
   * Primary Key: AutoField, BigAutoField
   * 문자열: CharField, TextField, SlugField
