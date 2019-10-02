@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "(etc). RDBS와 NoSQL의 차이"
+title:  "(etc). RDBMS와 NoSQL의 차이"
 comments: true
-description: "RDBS, NoSQL"
+description: "RDBMS, NoSQL"
 author: SeungHyeon Tak
 date:   2019-09-28 13:34:20 +0700
 categories: [etc]
 tags: [etc]
-keywords: "RDBS, NoSQL"
+keywords: "RDBMS, NoSQL"
 ---
-#### etc. RDBS와 NoSQL의 차이 알아보기
+#### etc. RDBMS와 NoSQL의 차이 알아보기
 
 #### RDBMS
 > RDBMS는 관계형 데이터베이스를 생성하고 수정하고 관리할 수 있는 소프트웨어라고 정의할 수 있다.
