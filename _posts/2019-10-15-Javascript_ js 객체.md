@@ -132,7 +132,9 @@ const dog = {
 ```
 
 > 이유 -> function으로 선언한 함수는 this가 제대로 자신이 속한 객체를 가르키게 되는데, 화살표 함수는 그렇지 않기 때문
+
 <br>
+
 * Getter 함수와 Setter 함수
 
 > 객체 안에 Getter 함수와 Setter 함수를 설정하는 방법 알아보기 <br>
