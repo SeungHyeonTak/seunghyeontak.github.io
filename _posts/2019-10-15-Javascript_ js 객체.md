@@ -167,3 +167,65 @@ numbers.b = 5;
 console.log(number.sum);
 ```
 
+<br>
+
+```javascript
+import "./styles.css";
+
+document.getElementById("app").innerHTML = `
+<h1>Hello Vanilla!</h1>
+<div>
+  We use Parcel to bundle this sandbox, you can find more info about Parcel
+  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+</div>
+`;
+// javascript 객체
+const numbers = {
+  _a: 1,
+  _b: 2,
+  sum: 3,
+  calculate() {
+    console.log("calculate");
+    this.sum = this._a + this._b;
+  },
+
+  get a() {
+    return this._a;
+  },
+
+  get b() {
+    return this._b;
+  },
+
+  set a(value) {
+    console.log("a가 바뀝니다.");
+    this._a = value;
+    this.calculate();
+  },
+
+  set b(value) {
+    console.log("b가 바뀝니다.");
+    this._b = value;
+    this.calculate();
+  }
+};
+console.log(numbers.sum);
+numbers.a = 5;
+numbers.b = 7;
+numbers.a = 9;
+console.log(numbers.sum);
+console.log(numbers.sum);
+console.log(numbers.sum);
+
+```
+
+<br>
+
+> setter 함수를 설정할때는 함수의 앞 부분에 `set` 키워드를 붙임 <br>
+> setter 함수를 설정하고 나면, numbers.a = 5 이렇게 값을 설정했을 때 5를 함수의 파라미터로 받아오게 된다. <br>
+> 위 코드에서는 객체 안에 _a, _b라는 숫자를 선언해주고, 이 값들을 위한 Getter와 Setter함수를 설정해준다. <br>
+> 이 코드 전의 코드에서는 numbers.sum이 조회 될 때마다 덧셈이 이루어졌었지만, 이제는 a or b값이 바뀔 때마다 sum 값을 연산함. <br>
+
+* Getter 함수는 특정 값을 조회 할 때 우리가 설정한 함수로 연산된 값을 반환
+* Setter 함수는 값이 변경될때마다 연산됨
+
