@@ -109,7 +109,7 @@ console.log(index);
 > 더 많은 내용을 보고 싶다면 밑의 링크로 가서 참고 하면 된다. <br>
 
 <br>
-(javascript 정리 블로그)[https://learnjs.vlpt.us/basics/09-array-functions.html]
+Link:[javascript 정리 블로그](https://learnjs.vlpt.us/basics/09-array-functions.html)
 <br>
 
 
