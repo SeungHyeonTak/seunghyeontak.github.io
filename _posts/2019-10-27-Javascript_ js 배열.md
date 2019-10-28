@@ -76,6 +76,7 @@ objects.push({
 
 console.log(objects.length);
 ```
-{name: '객체1'},
+
+<br>
 
 
