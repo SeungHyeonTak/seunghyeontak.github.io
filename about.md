@@ -13,12 +13,13 @@ permalink: /about/
 - Python
 - Django
 - HTML / CSS
+- JavaScript
 - AWS
 - GitHub
 - PostgreSQL
 
 
-## 프로젝트 결과물
+## 프로젝트 결과물 - 현재 AWS 서버 닫힘
 
  - 2019.07-2019.07 :: 페이스북 클론 서비스(개인프로젝트) : <http://facebookclone.online/>
  - 2019.08-2019.08 :: 야놀자 클론 서비스(팀 프로젝트(협업)) : <http://yanoljamvp.com/>
