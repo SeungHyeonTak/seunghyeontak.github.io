@@ -164,12 +164,15 @@ F()를 쓴 부분에서는 `values`메서드 이전에 `annotate`로 추가했�
 daily_count = orders.values('created', 'name').annotate(count=Count('name'))
 
 ```
+
 <br>
 
 **자 여기서 잘 정리 안되는 분들은 잠깐 잘 정리하고 밑 부분 시작하기**
 
+<br>
 *****
 
+<br>
 > 특정 제품의 날짜별 판매 개수 구하기 <br>
 <br>
 > 전체 제품이 아닌 관심 있는 제품(특정제품)의 날짜별 판매 개수를 알고 싶을때
@@ -177,11 +180,13 @@ daily_count = orders.values('created', 'name').annotate(count=Count('name'))
 * `filter`를 사용한다.
 
 말 그대로 간단하다. 내가 언어의 온도라는 책에 대한 리스를 알고 싶으면 filter에 특정 책 이름만 filter걸어주면 된다.
+<br>
 
 ```python
 book_daily_count = orders.filter(name='언어의 온도').values('created','name').annotate(count=Count('product'))
 ```
 
+<br>
 > 우리가 크게 목표로 잡았던 **annotate와 aggregate**이 유용한 사례를 살펴 볼 것이다. <br>
 > 바로 결제 취소 발생이 되었을때 이다. <br>
 > 물론 판매가 있으면 취소도 있는법! - 결제가 취소되었을 때는 취소 로그를 남겨야 한다. <br>
@@ -247,7 +252,7 @@ result = order.aggregate(total_price=Sum('sales_price')-Sum('cancel_price'))
 
 이렇게 다양한 요구사항들이 언제 본인들을 당활시킬줄 모르니 하나의 요구사항이 오더라도 잘 쪼개서 생각하고 쿼리를 추출 하자
 
-(참고 사이트)[http://raccoonyy.github.io/django-annotate-and-aggregate-like-as-excel/]
+[참고 사이트](http://raccoonyy.github.io/django-annotate-and-aggregate-like-as-excel/)
 
 ****
 
