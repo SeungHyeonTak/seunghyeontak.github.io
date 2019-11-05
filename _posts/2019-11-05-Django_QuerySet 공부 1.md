@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django_queryset에 대한 이해 2"
+title:  "Django_queryset에 대한 이해 1"
 comments: true
 description: "Django, SQLquery, ORM"
 author: SeungHyeon Tak
