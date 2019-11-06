@@ -4,7 +4,7 @@ title:  "Django_queryset에 대한 이해 1"
 comments: true
 description: "Django, SQLquery, ORM"
 author: SeungHyeon Tak
-date:   2019-11-05 21:30:33 +0700
+date:   2019-11-05 21:30:20 +0700
 categories: [Django]
 tags: [Django]
 keywords: "Django"

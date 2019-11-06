@@ -79,7 +79,10 @@ class Product(models.Model):
 2019-10-10 | 고급 C 언어
 ```
 
+<br>
 이러한 판매 내역 모델을 구현하자
+<br>
+
 
 ```python
 class OrderLog(models.Model):
@@ -158,6 +161,8 @@ F()를 쓴 부분에서는 `values`메서드 이전에 `annotate`로 추가했�
 > 조금 더 들어가보면 이제 `날짜별`, `제품별` `판매개수`를 구해볼 수 있다. <br>
 <br>
 > values에 넣을 기준 필드 `created` / `name` 그리고 `annotate`에서는 레코드 개수를 세주기위한 `Count`메서드를 사용할것이다.
+
+
 <br>
 ```python
 
@@ -170,6 +175,7 @@ daily_count = orders.values('created', 'name').annotate(count=Count('name'))
 **자 여기서 잘 정리 안되는 분들은 잠깐 잘 정리하고 밑 부분 시작하기**
 
 <br>
+
 *****
 
 <br>
@@ -180,6 +186,7 @@ daily_count = orders.values('created', 'name').annotate(count=Count('name'))
 * `filter`를 사용한다.
 
 말 그대로 간단하다. 내가 언어의 온도라는 책에 대한 리스를 알고 싶으면 filter에 특정 책 이름만 filter걸어주면 된다.
+
 <br>
 
 ```python
@@ -200,9 +207,11 @@ class OrderLog(models.Model):
     created = models.DateTimeField('판매일', auto_now_add=True)
     is_cancel = models.BooleanField('결제 취소', default=False)  # 추가된 필드
 ```
+<br>
 
 그리고 결제 취소 내역을 쿼리로 추가한다.
 
+<br>
 ```python
 book_cancel = Product.objects.get(name='언어의 온도')
 day = datetime(2019, 10, 1)
@@ -236,10 +245,13 @@ order_list2 = orders.annotate(
 )
 ```
 
+<br>
 조금 어렵게 보이지만 설명하자면
 이렇게 구성하게 되면 판매내역엔 sales_price 필드에 price값이 들어가고, 결제 취소 내역인 경우엔 cancel_price 필드에 price값이 들어간다. default=0이므로 해당하지 않는 필드에는 0이 들어간다.
 
+<br>
 > 판매 금액의 합 - 취소 금액의 합 = 총 판매액 <br>
+<br>
 
 ```python
 
