@@ -52,7 +52,6 @@ for student in student_set:
 평가된 모델들은 쿼리셋의 내장 캐시에 저장되며, 
 덕분에 우리가 쿼리셋을 다시 순회하더라도 똑같은 쿼리를 DB에 다시 전달 하지 않는다.
 
-
 ```python
 pet_set = Pet.objects.filter(species='Cat')
 
@@ -70,7 +69,6 @@ for pet in pet_set:
 일단 쿼리셋에 레코드가 존재하는지를 검사한 후 하나라도 발견되었을 때만 
 이를 순회하여 할 때 유용하다.
 
-
 ```python
 restaurant_set = Restaurant.objects.filter(cuisine="Indian")
 
@@ -79,7 +77,6 @@ if restaurant_set:
     for restaurant in restaurant_set:
 	print(restaurant.name)
 ```
-
 
 #### 결과 전체가 아닌 하나의 정보만 알고싶을때 쿼리셋 캐시가 문제됨
 결과 전체를 순회하지 않고 단지 레코드에서 최소 하나의 정보가 존재하는지 알아보고싶을때가 있다.
@@ -341,7 +338,7 @@ Post.objects.values_list('id', flat=True).order_by('id')
 
 (작성중...)
 
-**update**
+**update** <br>
 우리가 데이터를 생성할줄 알면 당연히 수정도 할줄 알아야한다.
 수정하기 위해서는 먼저 수정할 Row 객체를 얻은 후 변경할 필드들을 수정한다.
 마지막에 save()메서드를 호출하면 테이블에 데이터가 갱신된다.
@@ -353,7 +350,7 @@ post.name = '파이썬'
 post.save()
 ```
 
-**delete**
+**delete** <br>
 데이터를 삭제하기 위해서는 먼저 삭제할 Row 객체를 얻은 후 delete() 메서드를 호출하면 된다.
 
 
