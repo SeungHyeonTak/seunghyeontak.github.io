@@ -336,7 +336,50 @@ Post.objects.values_list('id', flat=True).order_by('id')
 # [1,2,3,...]
 ```
 
-(작성중...)
+flat필드가 둘 이상인 경우 전달하는 것은 오류이다. <br>
+`named=True`는 같은 결과를 얻기 위해 쓸 수 있다. <br>
+
+
+```python
+Post.objects.values_list('id', 'title', named=True)
+# <QuerySet [Row(id=1, title='언어의 온도'), ...]>
+```
+
+이 명령어는 튜플로 변환하는데 약간의 성능 저하로 인해 결과를 더 읽기 쉽게 사용할 수 있다.<br>
+values_list()선언 된 순서대로 모델의 모든 필드가 반환된다. <br>
+<br>
+특정 필드값을 얻기 위해서는 다음과 같이 쿼리를 짤 수 있다. <br>
+<br>
+
+
+```python
+Post.objects.values_list('headline', flat=True).get(pk=1)
+# '언어의 온도'
+```
+
+
+* dates()
+특정 종류의 사용 가능한 모든 날짜를 나타내는 객체를 QuerySet 목록으로 평가한다.<br>
+`dates(field, kind, order='ASC')` 형태로 나타내며 kind는 "year", "month", "week", "day"로 나타낼 수 있으며, order의 기본값은 "ASC"이다 "DESC"는 별도로 지정 해줘야 한다.
+
+```python
+Entry.objects.dates('pub_date', 'year')
+# [datetime.date(2019, 1, 1)]
+Entry.objects.dates('pub_date', 'month')
+# [datetime.date(2019, 2, 1), datetime.date(2019, 3, 1)]
+Entry.objects.dates('pub_date', 'week')
+# [datetime.date(2019, 2, 14), datetime.date(2019, 3, 14)]
+Entry.objects.dates('pub_date', 'day')
+# [datetime.date(2019, 2, 20), datetime.date(2019, 3, 20)]
+Entry.objects.dates('pub_date', 'day', order='DESC')
+# [datetime.date(2019, 3, 20), datetime.date(2019, 2, 20)]
+Entry.objects.filter(headline__contains='Lennon').dates('pub_date', 'day')
+# [datetime.date(2019, 3, 20)]
+```
+
+<br>
+등등 많은 QuerySet 구문들이 있는데 이는 장고 공식문서에 자세히 나와있다.
+<br>
 
 **update** <br>
 우리가 데이터를 생성할줄 알면 당연히 수정도 할줄 알아야한다.
