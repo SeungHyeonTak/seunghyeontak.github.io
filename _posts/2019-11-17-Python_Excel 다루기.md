@@ -27,12 +27,10 @@ import openpyxl 해주기
 #### Excel 파일 쓰기
 
 ```python
+# ex. 1
 from openpyxl import Workbook
 
 write_wb = Workbook()
-
-# 이름이 있는 시트를 생성
-# write_ws = write_wb.create_sheet('생성시트')
 
 # sheet1에다 입력
 write_ws= write_wb.active
@@ -47,6 +45,7 @@ write_wb.save('파일경로및 이름')
 
 ##################################
 
+# ex. 2
 from openpyxl import Workbook
 
 wb = Workbook()
@@ -69,3 +68,20 @@ wb.save(filenem=file_name)
 ```
 
 <br>
+
+#### excel 새로운 sheet생성
+
+```python
+wb = openpyxl.Workbook()
+sheet2 = wb.create_sheet('sheet2')
+# sheet2라는 이름의 sheet가 생성
+
+sheet3 = wb.create_sheet('sheet3', 1)
+# ('sheet_name', index) <- index에는 sheet의 순번을 정할 수 있다.
+
+sheet2.title = '이름변경'
+# 이렇게 이름을 변경
+
+wb.save('test.xlsx')
+
+```
