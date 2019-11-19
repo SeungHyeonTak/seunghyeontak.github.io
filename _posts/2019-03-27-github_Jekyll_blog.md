@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github-Jekyll Blog"
+title:  "Github-Jekyll 블로그 시작하기"
 comments: true
 description: "Github"
 author: SeungHyeon Tak
