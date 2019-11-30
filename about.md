@@ -18,14 +18,5 @@ permalink: /about/
 - GitHub
 - PostgreSQL
 
-
-## 프로젝트 결과물 - 현재 AWS 서버 닫힘
-
- - 2019.07-2019.07 :: 페이스북 클론 서비스(개인프로젝트) : <http://facebookclone.online/>
- - 2019.08-2019.08 :: 야놀자 클론 서비스(팀 프로젝트(협업)) : <http://yanoljamvp.com/>
- - 2019.08-2019.09 :: 배달의민족 웹 서비스(개인프로젝트) : <https://fooddeliverybackend.online/>
-
-## 개인 포트폴리오
-
- * [Portfolio](http://takseunghyeonportfolio.backenddev.site/)
-
+## 경력
+- 2019-10 에이치엔비라이프 Backend 개발자
