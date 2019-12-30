@@ -2,7 +2,7 @@
 layout: post
 title:  "Django urls과 view"
 comments: true
-description: "Django url", "Django view"
+description: "Django url, Django view"
 author: SeungHyeon Tak
 date:   2019-04-22 23:50:11 +0700
 categories: [Django]
