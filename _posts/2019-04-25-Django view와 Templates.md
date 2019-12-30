@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_08.(로또만들기)view와Templates 연동"
+title:  "Django view와 Templates 연동"
 comments: true
-description: "Django_part08"
+description: "Django view에서 Templates 연동"
 author: SeungHyeon Tak
 date:   2019-04-25 20:30:00 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django view Templates"
 ---
-#### Django.08 웹 개발
+#### Django view에서 Template 연동하기
 
 * app 폴더 urls.py 수정
 

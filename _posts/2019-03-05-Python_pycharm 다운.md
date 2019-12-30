@@ -7,9 +7,9 @@ author: SeungHyeon Tak
 date:   2019-03-05 21:06:23 +0700
 categories: [python]
 tags: [python]
-keywords: "python"
+keywords: "pycharm 다운"
 ---
-#### Pycharm 다운
+## Pycharm 다운
 
 ### Window
 1. 공식 홈페이지 접속
@@ -29,6 +29,9 @@ keywords: "python"
    * Create New Project를 누릅니다.
    * 그리고 원하는 프로젝트 이름을 적고 Create 해준다.
 8. window pycharm 설치 끝
+
+*****
+
 ### Linux
 1. 일단 시작은 window와 똑같이 설치 홈페이지에서 Community를 설치 해준다.
 2. 압축을 풀어준다.

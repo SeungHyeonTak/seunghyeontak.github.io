@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_13.(로또만들기)pythonanywhere"
+title:  "Django pythonanywhere"
 comments: true
-description: "Django_part13"
+description: "Django pythonanywhere"
 author: SeungHyeon Tak
 date:   2019-04-29 23:21:10 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django, Pythonanywhere"
+keywords: "Django", "Pythonanywhere"
 ---
-#### Django.13 웹 개발
+#### Django pyothonanywhere
 
 * pythonanywhere 사용법
 

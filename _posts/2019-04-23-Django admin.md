@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_06.(로또만들기)admin site에 model등록"
+title:  "Django admin site에 model등록"
 comments: true
-description: "Django_part06"
+description: "Django admin"
 author: SeungHyeon Tak
 date:   2019-04-23 09:30:31 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django admin"
 ---
-#### Django.06 웹 개발
+#### Django admin
 
 models.py에서 작성을 하였다면 이제 확인해볼 차례입니다.
 http://127.0.0.1:8000/admin/ 으로 접속하면 

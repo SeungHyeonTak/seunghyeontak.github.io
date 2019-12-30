@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_04.(로또만들기)urls와view"
+title:  "Django urls과 view"
 comments: true
-description: "Django_part03"
+description: "Django url", "Django view"
 author: SeungHyeon Tak
 date:   2019-04-22 23:50:11 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django url", "Django view"
 ---
-#### Django.04 웹 개발
+#### Django url과 view에 대해
 
 Django urls.py & view.py
 

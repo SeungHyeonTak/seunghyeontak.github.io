@@ -1,23 +1,22 @@
 ---
 layout: post
-title:  "Django_03.(로또만들기)server구동"
+title:  "Django server 구동 테스트"
 comments: true
-description: "Django_part03"
+description: "Django runserver"
 author: SeungHyeon Tak
 date:   2019-04-22 11:52:12 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django runserver 해보기"
 ---
-#### Django.03 웹 개발
+#### Django Server 구동하기
 *Django server 구동 테스트*
 
-앞의 내용을 이어하자면
 Django까지 설치 완료 후 작업을 시행해 보겠습니다.
 먼저 만든 프로젝트로 갑니다.(저는 config라는 프로젝트를 생성했습니다.)
-프로젝트 폴더 안에 있는`settings.py`로 가서 제일 밑 부분으로 가면
 
 ```
+# 프로젝트 폴더 안에 있는`settings.py`로 가서 제일 밑 부분으로 가면
 LANGUAGE_CODE = 'ko-kr'
 TIME_ZONE = 'Asia/Seoul'
 ```

@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_05.(로또만들기)model class"
+title:  "Django model"
 comments: true
-description: "Django_part05"
+description: "Django model 작성하는 법"
 author: SeungHyeon Tak
 date:   2019-04-22 23:59:30 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django model 작성하기"
 ---
-#### Django.05 웹 개발
+#### Django model class
 
 *Django - model class 만들기*
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_09.(로또만들기)Shell을 이용한 Django 관리"
+title:  "Django Shell 다루기"
 comments: true
-description: "Django_part09"
+description: "Django Shell"
 author: SeungHyeon Tak
 date:   2019-04-25 22:10:00 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django Shell"
 ---
-#### Django.09 웹 개발
+#### Django Shell 사용하기
 
 * Pycharm으로 shell 이용하기
 * 터미널

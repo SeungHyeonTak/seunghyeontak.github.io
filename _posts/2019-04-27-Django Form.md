@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_11.(로또만들기)Form 생성"
+title:  "Django Form 생성"
 comments: true
-description: "Django_part11"
+description: "Django Form 생성"
 author: SeungHyeon Tak
 date:   2019-04-27 16:12:00 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django Form"
 ---
-#### Django.11 웹 개발
+#### Django Form이란?
 
 데이터 입력받는 Form
 

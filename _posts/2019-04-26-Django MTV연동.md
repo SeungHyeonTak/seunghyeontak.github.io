@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Django_10.(로또만들기)MTV 연동"
+title:  "Django MTV"
 comments: true
-description: "Django_part10"
+description: "Django MTV"
 author: SeungHyeon Tak
 date:   2019-04-26 19:13:59 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django"
+keywords: "Django MTV"
 ---
-#### Django.10 웹 개발
+#### Django MTV란?
 
 M - Model
 T - Templates
