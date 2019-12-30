@@ -7,7 +7,7 @@ author: SeungHyeon Tak
 date:   2019-04-22 23:50:11 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django url", "Django view"
+keywords: "Django url, Django view"
 ---
 #### Django url과 view에 대해
 

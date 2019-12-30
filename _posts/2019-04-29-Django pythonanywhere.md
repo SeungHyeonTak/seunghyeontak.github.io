@@ -7,7 +7,7 @@ author: SeungHyeon Tak
 date:   2019-04-29 23:21:10 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django", "Pythonanywhere"
+keywords: "Django, Pythonanywhere"
 ---
 #### Django pyothonanywhere
 

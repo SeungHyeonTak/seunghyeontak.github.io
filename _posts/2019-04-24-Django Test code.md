@@ -7,7 +7,7 @@ author: SeungHyeon Tak
 date:   2019-04-24 13:30:31 +0700
 categories: [Django]
 tags: [Django]
-keywords: "Django test code 작성해보기", "Django 테스트 코드 작성해보기"
+keywords: "Django test code 작성해보기, Django 테스트 코드 작성해보기"
 ---
 #### Django test code
 
