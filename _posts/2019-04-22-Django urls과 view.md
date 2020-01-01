@@ -9,9 +9,9 @@ categories: [Django]
 tags: [Django]
 keywords: "Django url, Django view"
 ---
-#### Django url과 view에 대해
+## Django url과 view에 대해
 
-Django urls.py & view.py
+Django urls.py & views.py
 
 `mysite/views.py`
 

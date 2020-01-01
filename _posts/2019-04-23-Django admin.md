@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django admin"
 ---
-#### Django admin
+## Django admin
 
 models.py에서 작성을 하였다면 이제 확인해볼 차례입니다.
 http://127.0.0.1:8000/admin/ 으로 접속하면 

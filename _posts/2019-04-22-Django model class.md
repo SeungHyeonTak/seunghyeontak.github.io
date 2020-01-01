@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django model 작성하기"
 ---
-#### Django model class
+## Django model class
 
 *Django - model class 만들기*
 

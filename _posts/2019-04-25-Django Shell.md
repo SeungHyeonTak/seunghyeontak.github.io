@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django Shell"
 ---
-#### Django Shell 사용하기
+## Django Shell 사용하기
 
 * Pycharm으로 shell 이용하기
 * 터미널

@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django test code 작성해보기, Django 테스트 코드 작성해보기"
 ---
-#### Django test code
+## Django test code
 
 먼저 우리가 생성한 앱폴더로 가보면 test.py가 있다.
 test 코드는 test.py에서 작성을 하는데 우리가 models.py에서 만든 Numbers의 generate 메소드를 테스트하기 위해 쓰이는 방법이다.

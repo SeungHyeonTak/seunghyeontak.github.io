@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django_REST Framework"
+title:  "Django REST Framework"
 comments: true
 description: "Django REST Framework, DRF"
 author: SeungHyeon Tak
@@ -9,8 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django REST Framework
-
+## DRF
 
 #### REST API란?
 > 간단하게 어떤일을 할 때 훨씬 쉽고 간단하게 일을 진행할 수 있는 방법이라고 이해하면 된다.

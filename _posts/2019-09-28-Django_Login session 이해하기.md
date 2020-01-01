@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Django_Login session 이해하기"
+title:  "Django Login session 이해하기"
 comments: true
 description: "Django Login session"
 author: SeungHyeon Tak
@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django"
 ---
-#### Django Login Session
+## Django Login Session
 
 
 ![loginsession](https://user-images.githubusercontent.com/46446165/65812832-2501c700-e208-11e9-80a6-1e6dd8e6b8ed.png)

@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django runserver 해보기"
 ---
-#### Django Server 구동하기
+## Django Server 구동하기
 *Django server 구동 테스트*
 
 Django까지 설치 완료 후 작업을 시행해 보겠습니다.

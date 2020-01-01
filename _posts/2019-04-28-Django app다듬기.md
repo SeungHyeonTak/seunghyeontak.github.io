@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django detail"
 ---
-#### Django detail 제작
+## Django detail 제작
 
 * `urls.py` detail 내용 추가
 * 정규표현식 사용 / url 부분에 입력된 해당 숫자를 mysitekey 변수에 argument parmeter로 담는다.

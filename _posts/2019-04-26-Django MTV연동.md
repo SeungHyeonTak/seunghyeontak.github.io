@@ -9,7 +9,7 @@ categories: [Django]
 tags: [Django]
 keywords: "Django MTV"
 ---
-#### Django MTV란?
+## Django MTV란?
 
 M - Model
 T - Templates
