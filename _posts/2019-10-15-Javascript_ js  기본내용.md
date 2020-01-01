@@ -9,7 +9,30 @@ categories: [JavaScript]
 tags: [JavaScript]
 keywords: "JavaScript"
 ---
-#### JavaScript
+## JavaScript
+
+* 에디터 - Sublime Text
+  * Sublime Text에서 side bar 줄 넣는 방법 (view / sidebar / Hide side bar)
+
+#### 숫자와 문자
+
+> 생활코딩 javascript 참고
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	alert(1+1);
+	// 이런식으로 정수, 실수 연산된 값 경고창으로 띄울 수 있음
+</script>
+</body>
+</html>
+```
+
 
 #### 변수와 상수
 
