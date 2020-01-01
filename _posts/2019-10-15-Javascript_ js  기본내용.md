@@ -33,6 +33,10 @@ keywords: "JavaScript"
 </html>
 ```
 
+웹에서 페이지 검사(F12)를 눌러 Console 창에서 직접 간단하게 실행 해볼 수도 있다.
+
+![console](https://user-images.githubusercontent.com/46446165/71642192-f3a70480-2cea-11ea-85cc-cecb527246c3.png)
+
 
 #### 변수와 상수
 
