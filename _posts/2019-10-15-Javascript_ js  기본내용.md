@@ -235,8 +235,8 @@ add = function(a,b){
 //익명함수
 //이름이 필요없고 바로 실행되는 함수
 
-(function(a,b){
-	return a + b;
+(function(){
+	return '바로출력';
 })();
 
 ```
