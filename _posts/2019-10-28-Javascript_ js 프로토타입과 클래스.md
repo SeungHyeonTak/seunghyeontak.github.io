@@ -143,40 +143,4 @@ cat.say();
 
 * `class`를 사용했을때, 다른 클래스를 쉽게 상속 가능
 
-<br>
 
-```javascript
-class Animal {
-    constructor(type, name, sound) {
-	this.type = type;
-	this.name = name;
-	this.sound = sound;
-    }
-
-    say() {
-	console.log(this.sound);
-    }
-}
-
-class Dog extends Animal {
-    construtor(name, sound) {
-	super('개', name, sound);
-    }
-}
-
-class Cat extends Animal {
-    construtor(name, sound) {
-	super('고양이', name, sound);
-    }
-}
-
-const dog = new Dog('멍멍이', '멍멍');
-const cat = new Cat('야옹이', '야옹');
-
-dog.say();
-cat.say();
-
-// 상속할땐, `extends`키워드를 사용, constructor에서 사용하는 `super()` 함수가 상속받은 클래스의 생성자를 가르킨다.
-```
-
-<br>
