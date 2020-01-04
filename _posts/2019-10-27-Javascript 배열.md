@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "javascript 배열"
+title:  "JavaScript 배열"
 comments: true
 description: "javascript"
 author: SeungHyeon Tak

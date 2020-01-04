@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "javaScript 객체지향프로그래밍"
+title:  "JavaScript 객체지향프로그래밍"
 comments: true
 description: "javascript"
 author: SeungHyeon Tak
