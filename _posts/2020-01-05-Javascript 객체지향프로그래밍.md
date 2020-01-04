@@ -2,11 +2,11 @@
 layout: post
 title:  "javaScript 객체지향프로그래밍"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2020-01-05 23:30:00 +0700
-categories: [javaScript]
-tags: [javaScript]
+categories: [javascript]
+tags: [javascript]
 keywords: "javaScript 객체지향"
 ---
 #### JavaScript 객체지향프로그래밍

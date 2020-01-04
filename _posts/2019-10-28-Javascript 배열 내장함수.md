@@ -2,12 +2,12 @@
 layout: post
 title:  "JavaScript 내장함수"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2019-10-28 21:34:00 +0700
-categories: [JavaScript]
-tags: [JavaScript]
-keywords: "JavaScript"
+categories: [javascript]
+tags: [javascript]
+keywords: "javascript"
 ---
 #### JavaScript 배열 내장 함수
 <br>

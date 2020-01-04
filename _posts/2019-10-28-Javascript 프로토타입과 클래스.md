@@ -2,12 +2,12 @@
 layout: post
 title:  "JavaScript 프로토타입과 클래스"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2019-10-28 22:03:00 +0700
-categories: [JavaScript]
-tags: [JavaScript]
-keywords: "JavaScript"
+categories: [javascript]
+tags: [javascript]
+keywords: "javascript"
 ---
 #### JavaScript 프로토타입과 클래스
 <br>

@@ -2,12 +2,12 @@
 layout: post
 title:  "JavaScript 반복문"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2019-10-28 21:03:00 +0700
-categories: [JavaScript]
-tags: [JavaScript]
-keywords: "JavaScript"
+categories: [javascript]
+tags: [javascript]
+keywords: "javascript"
 ---
 #### JavaScript 반복문
 <br>

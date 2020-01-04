@@ -2,12 +2,12 @@
 layout: post
 title:  "JavaScript 기본내용"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2019-10-15 23:19:00 +0700
-categories: [JavaScript]
-tags: [JavaScript]
-keywords: "JavaScript"
+categories: [javascript]
+tags: [javascript]
+keywords: "javascript"
 ---
 ## JavaScript
 

@@ -2,11 +2,11 @@
 layout: post
 title:  "JavaScript 입문"
 comments: true
-description: "JavaScript"
+description: "javascript"
 author: SeungHyeon Tak
 date:   2019-10-14 23:19:00 +0700
-categories: [JavaScript]
-tags: [JavaScript]
+categories: [javascript]
+tags: [javascript]
 keywords: "JavaScript"
 ---
 #### JavaScript 입문
