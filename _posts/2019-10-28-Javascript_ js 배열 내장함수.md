@@ -105,6 +105,24 @@ console.log(index);
 ```
 <br>
 
+#### toUpperCase
+
+소문자를 대문자로 변환 시켜준다.
+
+```
+// 함수를 이용하여 알아보기
+
+function get_members(){
+    return ['tak', 'seung', 'hyeon'];
+}
+
+members = get_members();
+
+document.write(members[0].toUpperCase()+'<br />');
+document.write(members[1].toUpperCase()+'<br />');
+document.write(members[2].toUpperCase()+'<br />');
+```
+
 > 등등 많은 내장 함수들이 있다. <br>
 > 더 많은 내용을 보고 싶다면 밑의 링크로 가서 참고 하면 된다. <br>
 

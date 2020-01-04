@@ -79,4 +79,17 @@ console.log(objects.length);
 
 <br>
 
+####  function안에서 배열 호출하기
+
+```javscript
+function get_members(){
+    return ['abcd','1234','가나다라']
+}
+
+const members = get_members();
+document.write(members[0]);  // 'abcd'
+document.write(members[1]);  // '1234'
+document.write(members[2]);  // '가나다라'
+```
+
 
