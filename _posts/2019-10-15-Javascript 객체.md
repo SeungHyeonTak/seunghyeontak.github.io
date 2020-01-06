@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javascript"
 ---
-#### JavaScript 객체
+## JavaScript 객체
 
 #### 객체
 > 객체는 우리가 변수 혹은 상수를 사용하게 될 때 하나의 이름에 여러 종류의 값을 넣을 수 있게 해줌 <br>

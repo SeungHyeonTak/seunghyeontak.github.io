@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javaScript 객체지향"
 ---
-#### JavaScript 객체지향프로그래밍
+## JavaScript 객체지향프로그래밍
 
 간단하게 객체지향기법에 대해 알고 가자
 

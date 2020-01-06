@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javascript"
 ---
-#### JavaScript 반복문
+## JavaScript 반복문
 <br>
 
 > for문의 기본적인 코드 <br>

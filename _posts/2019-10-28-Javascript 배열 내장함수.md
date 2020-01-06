@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javascript"
 ---
-#### JavaScript 배열 내장 함수
+## JavaScript 배열 내장 함수
 <br>
 
 #### forEach

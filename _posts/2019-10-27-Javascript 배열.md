@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javascript"
 ---
-#### JavaScript 배열
+## JavaScript 배열
 <br>
 
 #### 배열

@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "javascript"
 ---
-#### JavaScript 프로토타입과 클래스
+## JavaScript 프로토타입과 클래스
 <br>
 
 #### 객체 생성자

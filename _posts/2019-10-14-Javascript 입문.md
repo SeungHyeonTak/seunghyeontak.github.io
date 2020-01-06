@@ -9,7 +9,7 @@ categories: [javascript]
 tags: [javascript]
 keywords: "JavaScript"
 ---
-#### JavaScript 입문
+## JavaScript 입문
 
 #### JavaScript란?
 > 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어이다.<br>
