@@ -11,6 +11,7 @@ keywords: "pycharm django debug"
 ---
 ## etc. Pycharm에서 django debug 설정하기
 
+
 ![스크린샷 2020-01-13 오후 2 25 02](https://user-images.githubusercontent.com/46446165/72234511-bb6bc400-3610-11ea-9a2c-1424187e28a6.png)
 
 Django 우측 상단을 보면 `Add configuration..`이라는 것이 보이는데 이 부분을 누르면
