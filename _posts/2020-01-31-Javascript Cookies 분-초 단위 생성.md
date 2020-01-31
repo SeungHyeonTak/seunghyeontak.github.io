@@ -45,3 +45,4 @@ Cookies.set('cookies_name', 'cookies_value', {expires:date})
 관련사이트 >> [[jQuery] 쿠키 초, 분 단위 생성](https://m.blog.naver.com/PostView.nhn?blogId=vucket&logNo=220892207607&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 
 
+
