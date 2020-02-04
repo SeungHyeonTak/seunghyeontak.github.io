@@ -116,3 +116,17 @@ dataset = ['Braund, Mr. Owen Harris',
            ]
 ```
 
+<details markdown="1">
+<summary>접기/펼치기</summary>
+
+```python
+count = 0
+for i in range(len(dataset)):
+    for j in range(len(dataset[i])):
+        if dataset[i][j] == 'M':
+            count += 1
+            print(count, dataset[i][j])
+```
+
+</details>
+
