@@ -126,6 +126,7 @@ for i in range(len(dataset)):
         if dataset[i][j] == 'M':
             count += 1
             print(count, dataset[i][j])
+            
 ```
 
 </details>
