@@ -9,20 +9,52 @@ categories: [자료구조]
 tags: [자료구조]
 keywords: "자료구조"
 ---
-#### 자료구조. Queue
+## 자료구조. Queue
 
 
 #### Queue란?
 > 자료를 보관할 수 있는 선형구조(스택과 동일)
 > 넣을때에는 한쪽 끝에서 밀어 넣기 -> enqueue
 > 꺼낼때에는 반대쪽에서 뽑아 꺼내야 하는 제약이 있음 -> dequeue
-> 선입선출(FIFO) 특징을 가지는 선형 자료구조
+> 가장 먼저 넣은 데이터를 가장 먼저 꺼낼 수 있는 구조 즉, 선입선출(FIFO) 특징을 가지는 자료구조 선형
 <br>
 ![queue](https://user-images.githubusercontent.com/46446165/64964674-7a6bd900-d8d6-11e9-89d1-679459335280.png)
 <br>
 ![queue2](https://user-images.githubusercontent.com/46446165/64964785-b4d57600-d8d6-11e9-80e5-3c20ff413c6e.png)
 <br>
 > 그림을 보면 먼저 들어간게 먼저 나오는 형식으로 된것이 Queue이다.
+
+#### 알아둘 용어
+
+* Enqueue : 큐에 데이터를 넣는 기능
+* Dequeue : 큐에서 데이터를 꺼내는 기능
+
+#### python Queue 라이브러리 활용하기
+
+Queue의 라이브러리에는 다양한 큐 구조로 Queue(), LifoQueue(), PriorityQueue()가 있다.
+
+* Queue() : 가장 일반적인 큐 자료구조
+* LifoQueue() : 나중에 입력된 데이터가 먼저 출력되는 구조
+* PriortyQueue() : 데이터마다 우선순위를 넣어서 우선순위가 높은순으로 데이터 출력
+
+#### Queue로 큐 만들기
+
+```python
+import queue
+
+data_queue = queue.Queue() # queue의 라이브러리로 class Queue를 가져다 씀
+
+data_queue.put('Hi') # 데이터를 넣을땐 put을 쓴다.
+data_queue.put(1)
+
+data_queue.qsize() # queue안에 몇개의 데이터가 있는지 확인
+
+data_queue.get() 
+# get은 데이터를 빼낼때 사용함, 인자를 넣지 않는 이유는 queue구조상 FIFO이기 때문에 인자를 넣을 필요 없이 제일 먼저 들어간 데이터가 나올꺼기 때문이다.
+
+data_queue.qsize() # 데이터가 1r개 남은걸 알 수 있다.
+
+```
 
 #### Queue구현의 2가지 방법
 * 연산정의 (stack이랑 똑같지만 몇가지 알아둬야할 사실 * 참고)
