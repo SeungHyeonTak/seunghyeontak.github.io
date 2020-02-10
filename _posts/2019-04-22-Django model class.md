@@ -61,3 +61,10 @@ model class 는 Field를 정의하기 위해 instance 변수가 아닌 class 변
 model의 필드는 필드 타입에 따라 여러 옵션을 가질수 있는데, 예를 들어서 CharField는 문자열 최대 길이를 의미하는 max_length라는 옵션을 갖는것 처럼 다른 필드들도 여러 옵션을 가질 수 있다. 
 자세한 내용은 여기서 확인할 수 있습니다.
 <https://docs.djangoproject.com/es/1.11/ref/models/fields/#module-django.db.models.fields.related>
+
+
+#### 참고
+
+이후 많은 프로젝트가 커지고 나선 위에서 한 방법 처럼 makemigration하는 방법은 안좋은 영향을 미칠수 있기에 해당 작업을 한 app-name만 따로 migrations 해주는게 효율적이다. 
+
+아무리 복잡한 폴더를 타고 있어도 migrations 폴더가 담겨져 있는 상위 폴더만 app-name에 적어주면 된다.
