@@ -37,6 +37,36 @@ Queue의 라이브러리에는 다양한 큐 구조로 Queue(), LifoQueue(), Pri
 * LifoQueue() : 나중에 입력된 데이터가 먼저 출력되는 구조
 * PriortyQueue() : 데이터마다 우선순위를 넣어서 우선순위가 높은순으로 데이터 출력
 
+#### LIFO Queue()
+
+LIFO (Last-In First-Out) - 마지막에 넣은게 먼저 나옴
+
+```python
+import queue
+
+data_queue = queue.LifoQueue()
+
+data_queue.put("funcoding")
+data_queue.put(1)
+data_queue.qsize() # 데이터가 2개 들어갔으니 2가 출력
+data_queue.get() # LIFO 방식이니 마지막에 넣은 1이 출력
+```
+
+#### Priority Queue()
+
+```python
+import queueu
+
+data_queue = queue.PriorityQueue()
+
+data_queue.put((10, "korea")) # 튜플 형식으로 저장됨 ((우선순위, "데이터")) 로 저장됨
+data_queue.put((5, 1))
+data_queue.put((15, "china"))
+
+data_queue.qsize() # 당연히 데이터를 3개 넣었으니 3이 출력
+data_queue.get() # (5,1)가 출력 될것이다. 이유) 위에서 말했듯이 이 형식은 튜플로 저장됨으로 앞에 들어가는 데이터는 우선순위로 적용되기 때문
+```
+
 #### Queue로 큐 만들기
 
 ```python
@@ -217,3 +247,9 @@ if __name__ == "__main__":
     print(Q.data.count)
 
 ```
+
+#### 큐가 많이 쓰이는 부분
+
+멀티태스킹을 위한 프로세스 스케줄링 방식을 구현하기 위해 많이 사용된다.(운영체제에서 나오는 내용)
+
+큐의 경우에는 장단점보다 큐의 활용 예로 프로세스 스케줄링 방식을 함께 이해 해두는것이 좋다.
