@@ -73,6 +73,5 @@ elif descending:
 else:
     print('mixed')
 ```
-
 </div>
 </details>
