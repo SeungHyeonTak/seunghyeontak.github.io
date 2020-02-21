@@ -233,3 +233,4 @@ settings.py에 `AUTH_USER_MODEL = 'account.User'`라고 수정해야함
 `$ ./manage.py createsuperuser`
 
 기존에 알던 superuser생성 방식이 달라진걸 볼 수 있을 것이다.
+
