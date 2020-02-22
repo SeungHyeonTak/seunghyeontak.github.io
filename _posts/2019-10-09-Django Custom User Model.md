@@ -50,8 +50,8 @@ BaseUserManager 클래스는 유저를 생성할때 사용하는 헬퍼 클래�
 # models.py
 
 class UserManager(BaseUserManager):
-		def create_user(self, email, date_of_birth, password=None):
-    		if not email:
+    def create_user(self, email, date_of_birth, password=None):
+        if not email:
             raise ValueError('Users must have an email address')
 
         user = self.model(
@@ -74,13 +74,22 @@ class UserManager(BaseUserManager):
         return user
 
 class User(AbstractBaseUser):
-		email = models.EmailField(verbose_name='email address', 								max_length=255, unique=True)
-		birthday = models.DateField()
-		is_active = models.BooleanField(default=True)
-		is_admin = models.BooleanField(default=False)
-		...
-		objects = UserManager()
-		USERNAME_FIELD = 'email'
+    email = models.EmailField(verbose_name='email address',max_length=255, unique=True)
+    birthday = models.DateField()
+    is_active = models.BooleanField(default=True)
+    is_admin = models.BooleanField(default=False)
+
+    objects = UserManager()
+    USERNAME_FIELD = 'email'
+
+    def has_perm(self, perm, obj=None):
+	return True
+
+    def has_module_perms(self, app_label):
+	return True
+
+    def is_staff(self):
+	return True
 ```
 
 **모델 필드에 대해선 설명하지 않겠음.**
@@ -122,39 +131,38 @@ from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from .models import User
 
 class UserCreationForm(forms.ModelForm):
-	password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
-  password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
+    password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
+    password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
-  class Meta:
-		model = User
-		fields = "__all__" # ('email', 'birthday')
+    class Meta:
+	model = User
+	fields = "__all__" # ('email', 'birthday')
 
-  def clean_password2(self):
-		password1 = self.cleaned_data.get("password1")
-    password2 = self.cleaned_data.get("password2")
-    if password1 and password2 and password1 != password2:
-    	raise forms.ValidationError("Passwords don't match")
+    def clean_password2(self):
+	password1 = self.cleaned_data.get("password1")
+        password2 = self.cleaned_data.get("password2")
+        if password1 and password2 and password1 != password2:
+    	    raise forms.ValidationError("Passwords don't match")
+	
+        return password2
 
-		return password2
+    def save(self, commit=True):
+	user = super().save(commit=False)
+	user.set_password(self.cleaned_data["password1"])
+	if commit:
+	    user.save()
 
-	def save(self, commit=True):
-		user = super().save(commit=False)
-		user.set_password(self.cleaned_data["password1"])
-		if commit:
-			user.save()
-
-		return user
+	return user
 
 class UserChangeForm(forms.ModelForm):
-	password = ReadOnlyPasswordHashField()
+    password = ReadOnlyPasswordHashField()
 
-  class Meta:
+    class Meta:
   	model = User
-  	fields = ('email', 'password', 'birthday',
-  						'is_active', 'is_admin')
+  	fields = ('email', 'password', 'birthday', 'is_active', 'is_admin')
 
 	def clean_password(self):
-		return self.initial["password"]
+	    return self.initial["password"]
 ```
 
 사용자 생성 폼과 수정 폼을 만들어야 한다.
@@ -187,27 +195,25 @@ from .models import User
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-	form = UserChangeForm
-  add_form = UserCreationForm
+    form = UserChangeForm
+    add_form = UserCreationForm
 
-	list_display = ('email', 'date_of_birth', 'is_admin')
-	list_filter = ('is_admin',)
-	fieldsets = (
-				(None, {'fields': ('email', 'password')}),
-				('Personal info', {'fields': ('date_of_birth',)}),
-				('Permissions', {'fields': ('is_admin',)}),
-	)
+    list_display = ('email', 'date_of_birth', 'is_admin')
+    list_filter = ('is_admin',)
+    fieldsets = (
+	(None, {'fields': ('email', 'password')}),
+	('Personal info', {'fields': ('date_of_birth',)}),
+	('Permissions', {'fields': ('is_admin',)}),
+    )
 
-	add_fieldsets = (
-				(None, {
-						'classes': ('wide',),
-						'fields': ('email', 'date_of_birth', 'password1', '												password2')
-						}
-				),
+    add_fieldsets = (
+		(None, {'classes': ('wide',),
+		'fields': ('email', 'date_of_birth', 'password1', 'password2')
+		}),
 	)
-	search_fields = ('email',)
-	ordering = ('email',)
-	filter_horizontal = ()
+    search_fields = ('email',)
+    ordering = ('email',)
+    filter_horizontal = ()
 ```
 
 * class UserAdmin(BaseUserAdmin):
