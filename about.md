@@ -8,12 +8,14 @@ permalink: /about/
 다양한 개발 관련 지식을 공유함은 물론이고 오타 및 문의 사항이 있으시면
 `conficker77@gmail.com`으로 메일 보내주시면 감사하겠습니다.
 
-## Program Skill
+## Skill
 
 - Python
 - Django
 - HTML / CSS
 - JavaScript
-- AWS
-- GitHub
 - PostgreSQL
+- AWS (S3, RDS, EC2)
+- Slack
+- GitHub
+- grunt js
