@@ -274,3 +274,4 @@ generator를 사용할 경우의 이점으로는 memory를 효율적으로 사�
 ### 파이썬의 Enumerate는 무엇인가?
 
 iterators와 함께 사용 가능한 것으로 iterations의 횟수를 셀 수 있다.
+
